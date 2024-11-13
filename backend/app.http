@@ -1,0 +1,57 @@
+###
+
+POST http://localhost:3000/signup/
+Content-Type:application/json
+
+{
+  "email": "rishitha123@gmail.com",
+  "password": "123456789",
+  "name": "Rishitha"
+  
+}
+###
+
+POST http://localhost:3000/login/
+Content-Type:application/json
+
+{
+  "email": "rishitha123@gmail.com",
+  "password":"123456789"
+}
+###
+GET http://localhost:3000/todos/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkYW1yaWNoYXJkMTIzQGdtYWlsLmNvbSIsImlkIjoiZTQ4ODA0YzMtOGNhNi00NTlkLWJmOTYtZGJhNzkxNDIyMWY5IiwiaWF0IjoxNzMxNDkxOTM4fQ.Z33KfmxgPRV0hkNDUT1eBgexJ_COp88NvhHfPnegItw
+
+###
+POST http://localhost:3000/todos/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkYW1yaWNoYXJkMTIzQGdtYWlsLmNvbSIsImlkIjoiZTQ4ODA0YzMtOGNhNi00NTlkLWJmOTYtZGJhNzkxNDIyMWY5IiwiaWF0IjoxNzMxNDkxOTM4fQ.Z33KfmxgPRV0hkNDUT1eBgexJ_COp88NvhHfPnegItw
+
+{
+"todo": "New Todo",
+"status": "IN PROGRESS"
+}
+###
+PUT http://localhost:3000/todos/8ca4a7f9-2f3a-4dda-9c60-90c3b5f97695/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkYW1yaWNoYXJkMTIzQGdtYWlsLmNvbSIsImlkIjoiZTQ4ODA0YzMtOGNhNi00NTlkLWJmOTYtZGJhNzkxNDIyMWY5IiwiaWF0IjoxNzMxNDkxOTM4fQ.Z33KfmxgPRV0hkNDUT1eBgexJ_COp88NvhHfPnegItw
+
+{
+"todo":"Learn HTML5",
+"status": "COMPLETED"
+}
+###
+DELETE http://localhost:3000/todos/cb67e46e-6254-4c4e-ad73-6a9a37738243/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkYW1yaWNoYXJkMTIzQGdtYWlsLmNvbSIsImlkIjoiZTQ4ODA0YzMtOGNhNi00NTlkLWJmOTYtZGJhNzkxNDIyMWY5IiwiaWF0IjoxNzMxNDkxOTM4fQ.Z33KfmxgPRV0hkNDUT1eBgexJ_COp88NvhHfPnegItw
+
+###
+
+PUT http://localhost:3000/user/profile
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkYW1yaWNoYXJkMTIzQGdtYWlsLmNvbSIsImlkIjoiZTQ4ODA0YzMtOGNhNi00NTlkLWJmOTYtZGJhNzkxNDIyMWY5IiwiaWF0IjoxNzMxNDkxOTM4fQ.Z33KfmxgPRV0hkNDUT1eBgexJ_COp88NvhHfPnegItw
+
+{
+    "name": "Rishitha Yadali",
+    "email": "rishitha1223@gmail.com"
+ 
+}
